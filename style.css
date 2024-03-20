@@ -1,0 +1,162 @@
+body{
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: #00051a;
+}
+h2{
+color:aquamarine;
+margin-bottom: 8rem;
+}
+.holi{
+    color:#00051a;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.holi span{
+    margin-bottom: -2rem;
+    font-size: 3rem;
+}
+.holi h1{
+    margin: 0;
+    font-size: 13rem;
+}
+.colors{
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+.colors span{
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    filter: blur(25px);
+}
+.colors span{
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    filter: blur(15px);
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    opacity: 0;
+}
+.colors span:nth-child(1){
+    background: red;
+    animation-name: circle1;
+}
+
+.colors span:nth-child(2){
+    background: green;
+    animation-name: circle2;
+    animation-delay: .5s;
+}
+
+.colors span:nth-child(3){
+    background: yellow;
+    animation-name: circle3;
+    animation-delay: 1s;
+}
+
+.colors span:nth-child(4){
+    background: blue;
+    animation-name: circle4;
+    animation-delay: 1.5s;
+}
+
+.colors span:nth-child(5){
+    background: orangered;
+    animation-name: circle5;
+    animation-delay: 2s;
+}
+
+.colors span:nth-child(6){
+    background: purple;
+    animation-name: circle6;
+    animation-delay: 2.5s;
+}
+/* Animation*/
+@keyframes circle1{
+    0%{
+        transform: translate(0,0) scale(0);
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translate(0,-450px) scale(6);
+        opacity: 0;
+    }
+}
+
+@keyframes circle2{
+    0%{
+        transform: translate(0,0) scale(0);
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translate(300px,-550px) scale(6);
+        opacity: 0;
+    }
+}
+
+
+@keyframes circle3{
+    0%{
+        transform: translate(0,0) scale(0);
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translate(-300px,-550px) scale(6);
+        opacity: 0;
+    }
+}
+
+@keyframes circle4{
+    0%{
+        transform: translate(0,0) scale(0);
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translate(200px,-350px) scale(6);
+        opacity: 0;
+    }
+}
+
+@keyframes circle5{
+    0%{
+        transform: translate(0,0) scale(0);
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translate(-200px,-450px) scale(6);
+        opacity: 0;
+    }
+}
+
+@keyframes circle6{
+    0%{
+        transform: translate(0,0) scale(0);
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translate(350px,-500px) scale(6);
+        opacity: 0;
+    }
+}
